@@ -5,6 +5,7 @@ import { nanoid } from 'nanoid';
 import { fetchContacts, addContact, removeContact, setFilter } from '../features/contactsSlice';
 import styles from './Contacts/Contact.module.scss';
 
+
 const Contacts = () => {
   const contacts = useSelector(state => state.contacts.contacts) || [];
   const filter = useSelector(state => state.contacts.filter) || '';
